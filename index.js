@@ -3,13 +3,12 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity(`New! update QQ!`);
-  bot.user.setPresence({ game: { name: 'Digunakan server', type: "streaming", url: "https://www.twitch.tv/"}});
-  bot.user.setStatus('available')
+setTimeout(() => bot.user.setActivity(`New! update QQ!`);
+setTimeout(() => bot.user.setPresence({ game: { name: 'Digunakan server', type: "streaming", url: "https://www.twitch.tv/"}});
+bot.user.setStatus('available')
 });
 
-setTimeout(() => {
-    bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type:2 "LISTENING" {type:1 "STEAMING"});
+setTimeout(() => {bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type:2 "LISTENING"});
   }, 20000)
 
 
