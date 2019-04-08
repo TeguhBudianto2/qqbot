@@ -7,7 +7,7 @@ bot.on("ready", async () => {
 });
 
 setTimeout(() => {
-  bot.user.setActivity(`Activate! ${bot.guilds.array().length} User`, {type: "LISTENING", "WATCHING", "PLAYING",});
+  bot.user.setActivity(`Activate! ${bot.guilds.array().length} User`, {type: "STEAMING", "WATCHING",});
   }, 20000)
 
 
