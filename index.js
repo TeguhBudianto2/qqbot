@@ -8,7 +8,7 @@ setTimeout(() => bot.user.setPresence({ game: { name: 'Digunakan server', type: 
 bot.user.setStatus('available')
 });
 
-setTimeout(() => {bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type:2 "LISTENING"});
+setTimeout(() => {bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type: "LISTENING"});
   }, 20000)
 
 
