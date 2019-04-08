@@ -6,9 +6,9 @@ bot.on("ready", async () => {
 bot.user.setActivity(`New! update QQ!`);
 bot.user.setPresence({game:{name:'New server update!', type: "streaming"}});
 bot.user.setStatus('available')
-setTimeout(() =>{bot.user.setActivity(`Activate | ${bot.user.username.array().length} User`, {type: "STREAMING"});
+setTimeout(() =>{bot.user.setActivity(`Activate | ${bot.user.array().length} User`, {type: "STREAMING"});
 }, 20000)
-  setTimeout(() =>{bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type: "LISTENING"});
+setTimeout(() =>{bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type: "LISTENING"});
 }, 20000)
 
 });
