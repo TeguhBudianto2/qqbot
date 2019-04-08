@@ -7,7 +7,7 @@ const bot = new Discord.Client({disableEveryone: true});
 
 });
 
-bot.user.setActivity(`on ${client.users.size} users | -help`, {
+setTimeout(() => {bot.user.setActivity(`on ${bot.users.size} users | -help`, {
     type: 'WATCHING'
   });
 
