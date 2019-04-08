@@ -4,8 +4,6 @@ const bot = new Discord.Client({disableEveryone: true});
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
 bot.user.setActivity(`New! update QQ!`);
-setTimeout(() =>{bot.user.setActivity(`Activate | ${bot.user.username.array().length} User`, {type: "LISTENING"});
-}, 20000)
 
 });
 setTimeout(() =>{bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type: "STEAMING"});
