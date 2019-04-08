@@ -7,7 +7,7 @@ bot.on("ready", async () => {
 });
 
 setTimeout(() => {
-    bot.user.setActivity(`${bot.guilds.array().length} User`, {type: "STREAMING"});
+    bot.user.setActivity(`${bot.guilds.array().length} User`, {type: "ONLINE"});
   }, 20000)
 
 
