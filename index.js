@@ -6,7 +6,7 @@ bot.on("ready", async () => {
   bot.user.setActivity(`New update QQ!`);
 });
 
-setsetActivity(() => {bot.user.setActivity(`Activate! ${bot.guilds.array().length} users👥 `, {type: "LISTENING"});
+setsetTimeout(() => {bot.user.setActivity(`Activate! ${bot.guilds.array().length} users👥 `, {type: "LISTENING"});
 }, 20000)
 
 
@@ -23,6 +23,19 @@ bot.on("message", async message => {
   if (cmd === `${prefix}server`){
     message.channel.send("https://discordapp.com/oauth2/authorize?client_id=522115615188582411&scope=bot&permissions=0");
   }
+  
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return;
+
+  let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}help`){
+    message.channel.send("prefix - | -help -server -info -qqspeedm -whatsapp -facebook");
+  }
+  
 });
 
 bot.login(process.env.token);
