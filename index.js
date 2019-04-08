@@ -4,6 +4,8 @@ const bot = new Discord.Client({disableEveryone: true});
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   bot.user.setActivity(`New! update QQ!`);
+  bot.user.setPresence({ game: { name: 'Digunakan server', type: "streaming", url: "https://www.twitch.tv/"}});
+  bot.user.setStatus('available')
 });
 
 setTimeout(() => {
