@@ -6,9 +6,9 @@ const bot = new Discord.Client({disableEveryone: true});
   bot.user.setActivity(`New! update QQ!`);
   bot.user.setUsername("QQ SPEED V1");
   bot.user.setStatus('online');
-  bot.user.setActivity(`on ${bot.users.size} users  -help`, {
-    type: 'WATCHING'
-  });
+  bot.user.setActivity(`on ${bot.users.size} users -help`, {
+    type: 'WATCHING'});
+  bot.user.setActivity(`on ${bot.guilds.array().length} User`, {type: 'WATCHING'});
 
 });
 
