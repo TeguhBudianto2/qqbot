@@ -3,6 +3,7 @@ const bot = new Discord.Client({disableEveryone: true});
 
  bot.on("ready", async () => {
  console.log(`${bot.user.username} is online!`);
+  bot.user.setUsername("QQ SPEED V1");
   bot.user.setStatus('online');
   bot.user.setActivity(`on ${client.users.size} users -help`, {
     type: 'WATCHING'
@@ -10,10 +11,6 @@ const bot = new Discord.Client({disableEveryone: true});
   bot.user.setActivity(`New! update QQ!`);
 
 });
-
- setTimeout(() => {
- bot.user.setActivity(`Used to server  ${bot.guilds.array().length} User`, {type: "STREAMING"});
-}, 20000)
 
 bot.on("message", async message => {
 
