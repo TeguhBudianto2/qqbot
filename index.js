@@ -3,6 +3,7 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
+  console.log("There are " + memberCount " people in this server!")
   bot.user.setActivity(`New update QQ!`);
 });
 
