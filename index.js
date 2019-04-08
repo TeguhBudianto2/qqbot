@@ -1,13 +1,16 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 
-bot.on("ready", async () => {
-  console.log(`${bot.user.username} is online!`);
-bot.user.setActivity(`New! update QQ!`);
+ bot.on("ready", async () => {
+ console.log(`${bot.user.username} is online!`);
+    bot.user.setActivity(`New! update QQ!`);
 
 });
-setTimeout(() =>{bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type: "STEAMING"});
-}, 20000)
+
+setTimeout(() => {
+    bot.user.setActivity(`update new! | ${bot.guilds.array().length} User`, {type: "STREAMING"});
+  }, 20000)
+
 
 bot.on("message", async message => {
 
