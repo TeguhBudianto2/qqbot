@@ -1,8 +1,8 @@
-discord.bot = new Discord.Client()
+const bot = new Discord.Client({disableEveryone: true});
 const Discord = require("discord.js");
 const guildID = "522115615188582411"
 var memberCount = discord.bot.guilds.get(guildID).members.size()
-console.log("There are " + memberCount " people in this server!")
+console.log("There are" + memberCount " people in this server!")
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
