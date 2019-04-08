@@ -3,12 +3,12 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity("please server...", {type: "STREAMING"})
   bot.user.setActivity(`New update QQ!`);
+  bot.user.setActivity(`New Please server is ping`);
 });
 
 setTimeout(() => {
-    bot.user.setActivity(`update new! | ${bot.guilds.array().length} User`, {type: "STREAMING"});
+    bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type: "LISTENING"});
   }, 20000)
 
 
