@@ -5,9 +5,7 @@ const bot = new Discord.Client({disableEveryone: true});
  console.log(`${bot.user.username} is online!`);
   bot.user.setActivity(`New! update QQ!`);
   bot.user.setUsername("QQ SPEED V1");
-  bot.user.setStatus('online');
-  bot.user.setActivity(`on ${bot.users.size} Users -help`, {type: 'WATCHING'});
-  bot.user.setActivity(`Digunakan server! ${bot.guilds.array().length} User`, {type: 'STREAMING'});
+  bot.user.setActivity(`new! server on ${bot.users.size} Users -help`, (`Digunakan server! ${bot.guilds.array().length} User`, {type: 'STREAMING'}); {type: 'WATCHING'});
 
 });
 
