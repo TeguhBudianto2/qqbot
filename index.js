@@ -3,9 +3,9 @@ const bot = new Discord.Client({disableEveryone: true});
 
  bot.on("ready", async () => {
  console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity(`New! update QQ!`);
+  bot.user.setActivity(`new! update QQ!`);
   bot.user.setUsername("QQ SPEED V1");
-  bot.user.setActivity(`new! server on ${bot.users.size} Users -help`, (`Digunakan server! ${bot.guilds.array().length} User`, {type: 'WATCHING'});
+  bot.user.setActivity(`new! server on ${bot.users.size} Users`, {type: 'WATCHING'});
 
 });
 
