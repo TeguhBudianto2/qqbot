@@ -7,9 +7,7 @@ bot.on("ready", async () => {
 });
 
 setTimeout(() => {
-  bot.user.setActivity(`Activate! ${bot.guilds.bot().length} Server`, {type: "LISTENING"});
-  }, 20000)
-  bot.user.setActivity(`Activate! ${bot.guilds.array().length} User`, {type: "STREAMING"});
+  bot.user.setActivity(`Activate! ${bot.guilds.array().length} User`, {type: "LISTENING", "WATCHING", "PLAYING",});
   }, 20000)
 
 
