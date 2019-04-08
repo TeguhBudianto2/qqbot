@@ -8,7 +8,8 @@ setTimeout(() =>{bot.user.setActivity(`Activate | ${bot.user.username.array().le
 }, 20000)
 
 });
-
+setTimeout(() =>{bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type: "STEAMING"});
+}, 20000)
 
 bot.on("message", async message => {
 
