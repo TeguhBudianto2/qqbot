@@ -7,9 +7,9 @@ const bot = new Discord.Client({disableEveryone: true});
 
 });
 
-setTimeout(() => {
-    bot.user.setActivity(`Activate ${bot.users.guilds.array().length} User`, {type: "LISTENING"});
-  }, 20000)
+bot.user.setActivity(`on ${client.users.size} users | -help`, {
+    type: 'WATCHING'
+  });
 
 
 bot.on("message", async message => {
