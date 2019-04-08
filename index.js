@@ -5,7 +5,7 @@ const bot = new Discord.Client({disableEveryone: true});
  console.log(`${bot.user.username} is online!`);
   bot.user.setUsername("QQ SPEED V1");
   bot.user.setStatus('online');
-  bot.user.setActivity(`on ${client.users.size} users -help`, {
+  bot.user.setActivity(`on ${bot.users.size} users -help`, {
     type: 'WATCHING'
 });
   bot.user.setActivity(`New! update QQ!`);
