@@ -5,9 +5,13 @@ bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
 bot.user.setActivity(`New! update QQ!`);
 bot.user.setPresence({game:{name:'New server update!', type: "streaming"}});
+bot.user.setStatus('available')
+setTimeout(() =>{bot.user.setActivity(`Activate | ${bot.user.username.array().length} User`, {type: "STREAMING"});
+}, 20000)
+  setTimeout(() =>{bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type: "LISTENING"});
+}, 20000)
+
 });
-bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type: "LISTENING"});
-  }, 20000)
 
 
 bot.on("message", async message => {
