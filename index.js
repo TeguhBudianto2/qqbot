@@ -1,7 +1,6 @@
-const Discord = require("discord.js");
-const token = "NTIyMTE1NjE1MTg4NTgyNDEx.D2w_Vw._ov18vk6zlXpk4Dux2DoN3m3RkU"
-const guildID = "522115615188582411"
 discord.bot = new Discord.Client()
+const Discord = require("discord.js");
+const guildID = "522115615188582411"
 var memberCount = discord.bot.guilds.get(guildID).members.size()
 console.log("There are " + memberCount " people in this server!")
 
