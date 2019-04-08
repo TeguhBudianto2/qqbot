@@ -3,9 +3,13 @@ const bot = new Discord.Client({disableEveryone: true});
 
  bot.on("ready", async () => {
  console.log(`${bot.user.username} is online!`);
-   bot.user.setActivity(`New! update QQ!`);
-   setGame(()=> {
-   bot.user.setActivity(`on ${bot.users.size} users -help`, {type: 'WATCHING'});
+   client.user.setUsername("qqbot");
+  client.user.setStatus('online');
+  client.user.setActivity(`on ${client.users.size} users | #help`, {
+    type: 'WATCHING'
+  });
+});
+  bot.user.setActivity(`New! update QQ!`);
 
 });
 
@@ -28,4 +32,7 @@ bot.on("message", async message => {
   }
 });
 
-bot.login(process.env.token);
+client.on("disconnected", () => {
+console.log("Disconnected from Discord");
+	console.log("Attempting to log in...");
+	client.login(process.env.token);
