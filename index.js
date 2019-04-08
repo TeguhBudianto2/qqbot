@@ -6,8 +6,6 @@ bot.on("ready", async () => {
 bot.user.setActivity(`New! update QQ!`);
 setTimeout(() =>{bot.user.setActivity(`Activate | ${bot.user.username.array().length} User`, {type: "LISTENING"});
 }, 20000)
-setTimeout(() =>{bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type: "STEAMING"});
-}, 20000)
 
 });
 
