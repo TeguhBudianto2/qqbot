@@ -1,7 +1,6 @@
 const bot = new Discord.Client({disableEveryone: true});
 const Discord = require("discord.js");
 const guildID = "522115615188582411"
-var memberCount = discord.bot.guilds.get(guildID).members.size()
 
 
 bot.on("ready", async () => {
