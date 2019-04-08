@@ -27,4 +27,16 @@ bot.on("message", async message => {
   }
 });
 
+// This code will run once the bot receives any message.
+bot.on("message", function (msg) {
+	// if message begins with "ping"
+	if (msg.content.indexOf("ping") === 0) {
+		// send a message to the channel the ping message was sent in.
+		bot.sendMessage(msg.channel, "pong!");
+
+		// alert the console
+		console.log("pong-ed " + msg.author.username);
+	}
+});
+
 bot.login(process.env.token);
