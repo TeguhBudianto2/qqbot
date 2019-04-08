@@ -23,7 +23,8 @@ bot.on("message", async message => {
   if (cmd === `${prefix}server`){
     message.channel.send("https://discordapp.com/oauth2/authorize?client_id=522115615188582411&scope=bot&permissions=0");
   }
-  
+  });
+
   if (message.author.bot) return;
   if (message.channel.type === "dm") return;
 
@@ -32,10 +33,9 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}help`){
-    message.channel.send("prefix - | -help -server -info -qqspeedm -whatsapp -facebook");
+  if (cmd === `${prefix}ping`){
+    message.channel.send("Pong!");
   }
-  
 });
 
 bot.login(process.env.token);
