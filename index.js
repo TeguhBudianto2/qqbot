@@ -7,7 +7,6 @@ const bot = new Discord.Client({disableEveryone: true});
   client.user.setStatus('online');
   client.user.setActivity(`on ${client.users.size} users | #help`, {
     type: 'WATCHING'
-  });
 });
   bot.user.setActivity(`New! update QQ!`);
 
