@@ -7,7 +7,7 @@ bot.on("ready", async () => {
 });
 
 setTimeout(() => {
-    bot.user.setActivity(`Activate ${bot.guilds.array().length} User`, {type: 2"WATCHING"."STREAMING"});
+    bot.user.setActivity(`Activate ${bot.guilds.array().length} User`, {type: "WATCHING"."STREAMING"});
   }, 20000)
 
 
