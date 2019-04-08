@@ -22,7 +22,7 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}qqserver`){
+  if (cmd === `${prefix}server`){
     message.channel.send("https://discordapp.com/oauth2/authorize?client_id=522115615188582411&scope=bot&permissions=0");
   }
 });
