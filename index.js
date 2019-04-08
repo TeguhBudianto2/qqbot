@@ -9,7 +9,7 @@ bot.on("ready", async () => {
 });
 
 setTimeout(() => {
-    bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type: "LISTENING"});
+    bot.user.setActivity(`Activate | ${bot.guilds.array().length} User`, {type:2 "LISTENING" {type:1 "STEAMING"});
   }, 20000)
 
 
