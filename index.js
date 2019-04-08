@@ -8,7 +8,7 @@ const bot = new Discord.Client({disableEveryone: true});
 });
 
 setTimeout(() => {
-    bot.user.setActivity(`Activate ${bot.users.username.array().length} User`, {type: "LISTENING"});
+    bot.user.setActivity(`Activate ${bot.users.guilds.array().length} User`, {type: "LISTENING"});
   }, 20000)
 
 
