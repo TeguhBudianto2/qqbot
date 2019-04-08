@@ -22,7 +22,7 @@ bot.on("message", async message => {
   let args = messageArray.slice(1);
 
   if (cmd === `${prefix}-help`){
-    message.channel.send("```-ping``` ```-info``` ```-botserver``` ```-Register``` ```-taptap``` ```-qqreg```");
+    message.channel.send("prefix or - < -help in watching try again commands qqreg,taptap,webreg,wa,versiapk,infobot");
   }
 });
 
