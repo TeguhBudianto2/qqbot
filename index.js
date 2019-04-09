@@ -6,7 +6,8 @@ const bot = new Discord.Client({disableEveryone: true});
   bot.user.setActivity(`new! update QQ!`);
   bot.user.setUsername("QQ SPEED V1");
   bot.user.setActivity(`new! server on ${bot.users.size} Users`, {type: 'LISTENING'});
-
+  bot.change_presence(game=discord.Game(name="run !whoison"))
+  
 });
 
 bot.on("message", async message => {
