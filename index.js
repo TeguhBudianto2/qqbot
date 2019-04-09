@@ -6,7 +6,7 @@ const bot = new Discord.Client({disableEveryone: true});
   bot.user.setActivity(`New! try update QQ!`);
   bot.user.setActivity(`New! update QQ!`);
   bot.user.setUsername("QQ SPEED V1");
-  bot.setActivity(`New! server on ${bot.users.size} Users`, {type: 'LISTENING'});
+  bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"{os.getenv('BOT_PREFIX')}help | {len(bot.users)} users."))
   
 });
 
