@@ -6,10 +6,10 @@ const bot = new Discord.Client({disableEveryone: true});
   bot.user.setActivity(`new! update QQ!`);
   bot.user.setUsername("QQ SPEED V1");
 # Setting `Listening ` status
-bot.user.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="IS PING ON"))
+bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="IS PING ON"))
 # Setting `Watching ` status
 bot.user.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="-help"))
-  bot.user.setActivity(`New! server on ${bot.users.size} Users`, {type: 'LISTENING'});
+  bot.setActivity(`New! server on ${bot.users.size} Users`, {type: 'LISTENING'});
   
 });
 
