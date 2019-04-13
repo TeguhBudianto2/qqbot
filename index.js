@@ -3,8 +3,12 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
+  bot.user.setActivity(`New! QQ SPEED V2`);
+});
+bot.user.setActivity(`By Skylar红色`, {type: 'STREAMING', url: 'https://twitch.tv/teguhbudianto'})
+sleep(80000)
   bot.user.setActivity(`Activate ${bot.users.size} Users! `, {type: 'STREAMING'});
-  bot.user.setStatus('available')
+sleep(80000)
 });
 
 bot.on("message", async message => {
