@@ -7,7 +7,8 @@ bot.on("ready", async () => {
         bot.user.setActivity(`https://discord.gg/DPQgeFT`, {type: 'LISTENING', url: 'https://twitch.tv/'})
         bot.user.setActivity(`help | //help`, {type: 'WATCHING', url: 'https://twitch.tv/'})
         bot.user.setActivity(`By Skylar红色`, {type: 'STREAMING', url: 'https://twitch.tv/'})
-        bot.user.setActivity(`Digunakan ${bot.guilds.size} server!`, {type: 'STREAMING', url: 'https://twitch.tv/'})
+        bot.user.setActivity(`Digunakan ${bot.guilds.array().length} server`, {type: "WATCHING"});
+  }, 20000)
 });
 
 bot.on("message", async message => {
