@@ -11,6 +11,7 @@ client.user.setPresence({
         },
         status: 'idle'
     })
+})
 
 client.on('message', msg => {
   if (msg.content === '/help') {
