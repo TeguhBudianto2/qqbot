@@ -4,14 +4,9 @@ const client = new Discord.Client();
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
-bot.user.setPresence({
-        game: { 
-            name: 'PREFIX / BOT INFO',
-            type: 'WATCHING'
-        },
-        status: 'idle'
-    })
-})
+client.user.setActivity('YouTube', { type: 'WATCHING' })
+  .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
+  .catch(console.error);
 
 client.on('message', msg => {
   if (msg.content === '/help') {
