@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === ',help') {
-    msg.reply('```Prefix is for ,help server use now``` ```wa``` ```fb``` ```taptap``` ```discord```');
+    msg.reply('```Prefix is for ,help server use now``` ```wa``` ```Coming Soon``` ```taptap``` ```discord```');
   }
 });
 
@@ -20,6 +20,12 @@ client.on('message', msg => {
 client.on('message', msg => {
   if (msg.content === ',taptap') {
     msg.reply(' App taptap download via: https://www.taptap.com/app/55618');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === ',wa') {
+    msg.reply('masuk grup silahkan link: https://chat.whatsapp.com/C1xvbhrYksP1AcLTXKZU78');
   }
 });
 
