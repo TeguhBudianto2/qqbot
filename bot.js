@@ -11,4 +11,10 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === ',qq') {
+    msg.reply('qq web via: https://ssl.zc.qq.com/v3/index-en.html');
+  }
+});
+
 client.login(process.env.BOT_TOKEN);
