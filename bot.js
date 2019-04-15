@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === '/help') {
-    msg.reply('```Prefix is for /help server use now``` ```wa```.```fb```.```taptap```');
+  if (msg.content === ',help') {
+    msg.reply('```Prefix is for ,help server use now``` ```wa```,```fb```,```taptap```,```discord');
   }
 });
 
