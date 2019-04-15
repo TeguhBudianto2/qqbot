@@ -25,7 +25,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === ',wa') {
-    msg.reply(' join masuk silahkan via: https://chat.whatsapp.com/C1xvbhrYksP1AcLTXKZU78');
+    msg.reply(' join masuk silahkan via: bit.ly/QQSPEEDID');
   }
 });
 
