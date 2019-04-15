@@ -17,4 +17,10 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === ',taptap') {
+    msg.reply(' App taptap download via: https://www.taptap.com/app/55618');
+  }
+});
+
 client.login(process.env.BOT_TOKEN);
