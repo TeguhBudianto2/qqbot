@@ -1,8 +1,14 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+client.on("ready", async () => {
+
+  console.log(`${bot.user.username} is online!`);
+
+    client.user.setActivity("New! SERVER QQ BOT")
+
+  client.user.setActivity("QQ HELP ME.",  {type: "WATCHING"});
+
 });
 
 client.on('message', msg => {
