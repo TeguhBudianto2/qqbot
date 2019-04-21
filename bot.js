@@ -33,7 +33,7 @@ client.on('message', msg => {
 
 client.on('message', message => {
     if(message.content.startsWith(",ping")) {
-            message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");        
+            msg.reply(new Date().getTime() - message.createdTimestamp + " ms");        
     }
 };
 
